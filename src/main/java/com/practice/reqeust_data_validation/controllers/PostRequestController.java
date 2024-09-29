@@ -15,12 +15,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/posts")
 public class PostRequestController {
 
-//    @PostMapping
-//    public ResponseEntity<ApiResponse<PostReqeust>> createDocument(@Valid @RequestBody PostReqeust documentRequest) {
-//        ApiResponse<PostReqeust> response = new ApiResponse<>(200, "Validation successful", documentRequest);
-//        return new ResponseEntity<>(response, HttpStatus.OK);
-//    }
-
     private final PostRQService postRQService;
 
     // Constructor-based Dependency Injection
