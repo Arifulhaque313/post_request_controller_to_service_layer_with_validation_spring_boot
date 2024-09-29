@@ -2,13 +2,13 @@ package com.practice.reqeust_data_validation.dtos;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-
-import java.util.List;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
-public class ErrorResponseDTO {
+@NoArgsConstructor
+public class ApiResponse<T> {
+    private int code;
     private String message;
-    private Object errors;
-    private String status;
+    private T data;
 }
